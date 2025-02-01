@@ -25,6 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Stop the pulsating animation on the center circle.
     document.querySelector("circle").style.animation = "none";
 
+    // Animate the center circle to shrink to nothing immediately.
+    anime({
+      targets: "circle",
+      scale: [1, 0],
+      duration: 100,
+      easing: "easeInOutQuad",
+    });
     // Array to store final bubble positions for collision checking.
     let placedBubbles = [];
     const bubbleCount = 100; // Increase the number of bubbles
@@ -72,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Animate the bubble: move it outward to its final position and scale it to full size.
       bubble.style.transform = `translate(${translateX}px, ${translateY}px) scale(1)`;
+      bubble.style.opacity = "1";
     }
   });
 });

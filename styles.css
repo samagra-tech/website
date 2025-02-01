@@ -43,8 +43,8 @@ body {
   background: #00d8d6;
   border-radius: 50%;
   /* Start centered, invisible and scaled down */
-  opacity: 1;
+  opacity: 0;
   transform: translate(-50%, -50%) scale(0);
   /* Animate transform and opacity for a "pop" effect */
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
 }
