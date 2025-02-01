@@ -1,0 +1,50 @@
+/* Ensure the page fills the entire viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* Center the SVG container */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style for the SVG circle */
+.pulse-circle {
+  fill: #00d8d6;
+  transform-origin: center;
+  animation: pulse 4s infinite;
+}
+
+/* Keyframes for the pulsating effect */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+}
+
+/* Style for bubble circles that pop out */
+.bubble {
+  position: absolute;
+  background: #00d8d6;
+  border-radius: 50%;
+  /* Start centered, invisible and scaled down */
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0);
+  /* Animate transform and opacity for a "pop" effect */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
