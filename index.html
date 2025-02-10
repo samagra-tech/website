@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pulsating Circle Animation</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Samagra Tech</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+      </head>
+      <body>
+        <div class="center">
+          <img
+            class="nameplate zoom-out"
+            src="nameplate.png"
+            alt="Samagra Tech"
+          />
+          <p id="message" class="nameplate fade-in"></p>
+        </div>
+      </body>
+    </html>
   </head>
-  <body>
-    <!-- SVG element containing the pulsating circle -->
-    <svg class="center" width="200" height="200" viewBox="0 0 100 100">
-      <circle class="pulse-circle" cx="50" cy="50" r="30" />
-    </svg>
-  </body>
 </html>

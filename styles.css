@@ -4,47 +4,42 @@ body {
   height: 100%;
   margin: 0;
   background-color: #fff;
+  font-family: "Work Sans", sans-serif;
 }
 
-/* Center the SVG container */
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-/* Style for the SVG circle */
-.pulse-circle {
-  fill: #00d8d6;
-  transform-origin: center;
-  animation: pulse 4s infinite;
+img.nameplate {
+  max-width: 100vw;
 }
 
-/* Keyframes for the pulsating effect */
-@keyframes pulse {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.5;
+/* Animation classes */
+.zoom-out {
+  animation: zoomOut 1s ease-in-out 500ms forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
   }
-  50% {
-    transform: scale(1.1);
+  to {
+    transform: scale(0.8);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 500ms ease-in-out 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
     opacity: 1;
   }
-  100% {
-    transform: scale(0.9);
-    opacity: 0.5;
-  }
-}
-
-/* Style for bubble circles that pop out */
-.bubble {
-  position: absolute;
-  background: #00d8d6;
-  border-radius: 50%;
-  /* Start centered, invisible and scaled down */
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0);
-  /* Animate transform and opacity for a "pop" effect */
-  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
 }
