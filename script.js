@@ -1,7 +1,6 @@
 const messages = [
   "Problems are connected. Solve the root cause, not just the symptoms.",
   "Big impact needs a big picture. Solve beyond the local.",
-  "Interconnected problems need integrated solutions.",
   "Fragmented solutions don’t work. Think big, act smart.",
 ];
 
