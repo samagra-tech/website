@@ -1,9 +1,8 @@
 const messages = [
-  "Gears are turning, magic is happening. Stay close.",
-  "Secrets are being crafted. All will be revealed soon.",
-  "You’re early… but trust us, it’ll be worth the wait",
-  "We’re cooking up something special. Stay tuned.",
-  "We’re working on it. Check back soon!",
+  "Problems are connected. Solve the root cause, not just the symptoms.",
+  "Big impact needs a big picture. Solve beyond the local.",
+  "Interconnected problems need integrated solutions.",
+  "Fragmented solutions don’t work. Think big, act smart.",
 ];
 
 function getMessage() {
