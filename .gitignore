@@ -1,0 +1,15 @@
+# macOS system files
+.DS_Store
+
+# Thumbnails
+._.DS_Store
+
+# Spotlight files
+.Spotlight-V100
+
+# Trash
+.Trashes
+
+# macOS metadata files
+*.swp
+.fseventsd

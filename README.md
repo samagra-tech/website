@@ -1,2 +1,0 @@
-# website
-Samagra Tech Website
