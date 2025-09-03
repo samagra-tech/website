@@ -8,11 +8,11 @@ import"../chunks/CWj6FrbW.js";import"../chunks/69_IOA4Y.js";import{F as G,G as R
       those trying to break down their internal information silos. From these
       experiences, a few patterns stand out.</p> <img alt="Pictorial representation of following template vs building with insights" style="max-width:100%; height:auto; margin: 1em 0;"> <h2>Key Lessons Learned</h2> <h3><!> Data is the Foundation</h3> <p>Like any system, RAG is only as good as the data behind it. Poorly
       understood, poorly prepared data leads to irrelevant or misleading
-      answers. Chunking strategy matters — logical, meaningful segmentation is
+      answers. Chunking strategy matters; logical, meaningful segmentation is
       crucial for retrieval to provide the right context to the LLM.</p> <h3><!> Data is Multi-Level</h3> <p>Documents are not flat. A simple list of chunks isn’t enough. Information
       must be represented as interconnected layers - sections, references,
-      metadata — so the retrieval engine can assemble a context that reflects
-      how humans actually read and understand.</p> <h3><!> User Personalization is Hard,
+      metadata; so the retrieval engine can assemble a context that reflects how
+      humans actually read and understand.</p> <h3><!> User Personalization is Hard,
       but Essential</h3> <p>No one wants to repeat the same request over and over. Capturing user
       preferences and applying them in context is deceptively difficult. Without
       it, knowledge systems feel generic and impersonal, reducing adoption.</p> <h3><!> Speed Matters</h3> <p>Even if the data and personalization are solved, users won’t wait. Slow
@@ -20,7 +20,7 @@ import"../chunks/CWj6FrbW.js";import"../chunks/69_IOA4Y.js";import{F as G,G as R
       is a constant trade-off that requires engineering discipline</p> <h3><!> Data is Dynamic</h3> <p>RAG systems are not limited to static documents. Data can come from
       databases, APIs, or even external internet sources. Each of these sources
       changes at different frequencies, and building tools to bring them
-      together — while still keeping response times acceptable — is a real
+      together; while still keeping response times acceptable is a real
       challenge</p> <h2>Closing Note</h2> <p>If your RAG-powered knowledge system still expects users to type long
       prompts instead of just speaking naturally, you’re already behind.
       Voice-first interfaces are no longer a “nice-to-have”; they’re becoming
