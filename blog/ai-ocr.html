@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/icon.jpg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon.jpg">
+		<link rel="icon" type="image/jpg" sizes="32x32" href="/icon.jpg">
+		<link rel="icon" type="image/jpg" sizes="16x16" href="/icon.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../app/immutable/assets/0.CugN2R7a.css" rel="stylesheet">
+		<link href="../app/immutable/assets/fa-layers-text.DdWHEj6G.css" rel="stylesheet">
+		<link href="../app/immutable/assets/2.naDqqNyu.css" rel="stylesheet">
+		<link rel="modulepreload" href="../app/immutable/entry/start.C7qEyvxY.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/83YGH4BT.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/C3VMBwAK.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/DhVwp9lp.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/DIeogL5L.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/Dvy9gdGb.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/CbMIXrM-.js">
+		<link rel="modulepreload" href="../app/immutable/entry/app.SSHJglu2.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/CWj6FrbW.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/DtjvKGuZ.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/hyTg8Vlb.js">
+		<link rel="modulepreload" href="../app/immutable/nodes/0.Tbgm6y3M.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/69_IOA4Y.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/IsAygqEx.js">
+		<link rel="modulepreload" href="../app/immutable/nodes/2.BXCZNnt2.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/Dz_Ng8Rf.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/3u8UK-_b.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/OCMz1gHG.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/Bl91ikzU.js">
+		<link rel="modulepreload" href="../app/immutable/nodes/6.vUFd5FSD.js"><!--[--><script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "tpw11vo3zd");
+  </script><!----><!--]-->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!--[--><!----><div class="blog-layout svelte-1yptk2w"><header class="svelte-1yptk2w"><nav class="svelte-1yptk2w"><a href="/" class="logo svelte-1yptk2w"><img src="/app/immutable/assets/samagra.Bsj6nRfT.png" alt="Samagra Logo" height="40"></a></nav></header> <main class="svelte-1yptk2w"><!----><!----><article class="blog-post"><header><h1>From Paper to Structured Data: GenAI Meets OCR</h1> <div class="metadata">on <time datetime="2025-09-06T00:00:00.000Z">September 6, 2025</time> <span>by Samagra Tech Team</span></div></header> <div class="content"><div class="tldr"><p>We built a GenAI-powered service that combines OCR with contextual
+        understanding to extract structured data from delivery slips of varying
+        layouts. The system enriches raw text with organizational context and
+        outputs machine-ready data, cutting down manual effort significantly.</p></div> <h2>Context</h2> <p>GenAI has touched almost every domain; code generation, automation,
+      marketing campaigns, video synthesis, even virtual photo shoots. Our
+      recent work explored another use case: extracting structured information
+      from physical documents.</p> <p>Traditional OCR (Optical Character Recognition) tools are good at scanning
+      text but weak in context. They struggle with images that have inconsistent
+      table layouts, or product brochures with decorative fonts and non-linear
+      design.</p> <p>Our client faced exactly this challenge with delivery slips received from
+      multiple vendors. Each slip followed a different layout, some
+      straightforward, others confusing. The need was clear: reliable extraction
+      of key fields in a structured format that downstream systems could
+      directly use.</p> <img src="/app/immutable/assets/ai-ocr-hero.CepStYr9.jpg" alt="Action Bot Screenshot" style="max-width:100%; height:auto; margin: 1em 0;"> <h2>Approach</h2> <p>We designed a service that combines OCR extraction with GenAI-based
+      contextual enrichment.</p> <ol><li>OCR identifies and extracts raw text.</li> <li>GenAI interprets the extracted text in the organization’s context (e.g.,
+        mapping “vendor code” across multiple layouts).</li> <li>When needed, the system enriches fields with information from other
+        sources.</li> <li>Output is returned in a structured, machine-readable format for users or
+        downstream systems.</li></ol> <h2>Key Considerations</h2> <p>Building a production-ready solution required attention beyond the core
+      workflow:</p> <ol><li><strong>Data Privacy</strong><br> The client’s concern about sensitive commercial data was addressed by hosting
+        an open-source LLM in their own GPU instance. All processing stayed within
+        their environment.</li> <li><strong>Accuracy</strong><br> The system was able to correctly associate about 95% of the required fields
+        with the right data from the scanned delivery slips.</li> <li><strong>Performance</strong><br> The service was tuned to deliver responses quickly enough to integrate seamlessly
+        into operational workflows.</li> <li><strong>Integration</strong><br> Output was designed in a structured format that downstream systems could
+        consume without additional transformation.</li></ol> <h2>Outcome</h2> <p>The pilot showed that combining OCR with GenAI can reliably process messy
+      documents, achieving 95% correct field associations and significantly
+      reducing manual effort, while meeting the client’s privacy and performance
+      requirements.</p> <ul><li><strong>Build time:</strong> 1 month from design to deployment</li> <li><strong>Accuracy:</strong> ~95% in pilot tests</li> <li><strong>Impact:</strong> Reduced manual data entry effort and enabled faster
+        downstream processing</li> <li><strong>Adoption:</strong> Pilot users satisfied with progress and eager
+        for broader rollout</li></ul></div></article><!----><!----> <section class="contact-section svelte-h4cfn2"><div class="content svelte-h4cfn2"><h3 class="svelte-h4cfn2">Want to build something together?</h3> <p class="svelte-h4cfn2">Let's connect and discuss how we can help you implement solutions in your
+      organization.</p> <a href="https://www.linkedin.com/in/sudocker/" target="_blank" rel="noopener noreferrer" class="linkedin-button svelte-h4cfn2"><!--[--><svg class="svelte-fa svelte-fa-base  svelte-bvo74f" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><!--[!--><!--]--><g transform="translate(224 256)" transform-origin="112 0" class="svelte-bvo74f"><g transform="translate(0,0) scale(1,1)" class="svelte-bvo74f"><!--[--><path d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z" fill="currentColor" transform="translate(-224 -256)" class="svelte-bvo74f"></path><!--]--></g></g></svg><!--]--><!----> Connect on LinkedIn</a></div></section><!----></main> <footer class="svelte-1yptk2w"><p>© Samagra Tech, 2025. All rights reserved.</p> <p>With <span class="heart svelte-1yptk2w">♥</span> from India</p></footer></div><!----><!--]--><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_cq4ptj = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../app/immutable/entry/start.C7qEyvxY.js"),
+						import("../app/immutable/entry/app.SSHJglu2.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 6],
+							data: [null,null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
